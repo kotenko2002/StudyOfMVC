@@ -1,0 +1,9 @@
+﻿@model List<ApplicationType>
+
+<div class="d-flex flex-column align-items-center">
+    @foreach (var item in Model)
+    {
+        <div class="card text-center w-25 m-1">Name: @item.Name</div>
+    }
+    <a asp-action="Create" class="btn btn-primary mt-1">Add new type</a>
+</div>
